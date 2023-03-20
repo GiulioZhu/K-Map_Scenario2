@@ -48,6 +48,8 @@ public class Question {
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter("./questions/questions.csv"));
             bw.write("QUESTION,ANSWER");
+            bw.newLine();
+
             for (int i = 0; i < questions.size(); i++) {
                 bw.write(questions.get(i) + "," + answers.get(i));
                 bw.newLine();
